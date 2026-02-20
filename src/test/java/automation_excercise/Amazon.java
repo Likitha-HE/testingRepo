@@ -24,7 +24,9 @@ public class Amazon {
 	@Test
 	public void test1() {
 		System.out.println("testing code");
-		
+		System.out.println("testing code");
+		System.out.println("testing code");
+		System.out.println("testing code");
 	}
 }
 //span[text()='MR']/preceding::i[1][@class="icp-radio"]
