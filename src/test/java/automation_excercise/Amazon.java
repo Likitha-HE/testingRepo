@@ -21,5 +21,9 @@ public class Amazon {
 	
 	//test
 	}
+	@Test
+	public void test1() {
+		
+	}
 }
 //span[text()='MR']/preceding::i[1][@class="icp-radio"]
