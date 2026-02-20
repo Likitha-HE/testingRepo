@@ -10,23 +10,18 @@ import org.testng.annotations.Test;
 
 public class Amazon {
 	@Test
-	public void test() {
+	public void test() throws InterruptedException {
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
-	driver.get("https://testautomationpractice.blogspot.com");
+	driver.get("https://www.amazon.in");
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	Actions act = new Actions(driver);
-	act.moveToElement(driver.findElement(By.xpath("//span[text()='MR']/preceding::i[1][@class='icp-radio']")));
-	
+	act.moveToElement(driver.findElement(By.xpath("//button[@aria-label='Expand to Change Language or Country']"))).perform();
+	driver.findElement(By.xpath("//span[text()='मराठी']/parent::span[@class='nav-text']/i")).click();
+	Thread.sleep(5000);
+	driver.quit();
 	
 	//test
 	}
-	@Test
-	public void test1() {
-		System.out.println("testing code");
-		System.out.println("testing code");
-		System.out.println("testing code");
-		System.out.println("testing code");
-	}
+	
 }
-//span[text()='MR']/preceding::i[1][@class="icp-radio"]
