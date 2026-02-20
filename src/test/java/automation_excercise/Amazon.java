@@ -23,12 +23,8 @@ public class Amazon {
 	
 	//test
 	}
-<<<<<<< HEAD
 	@Test
 	public void test1() {
 		
 	}
-=======
-	
->>>>>>> Automation
 }
