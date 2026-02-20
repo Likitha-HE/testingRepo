@@ -8,5 +8,9 @@ public class Automation {
 	public void test() {
 		
 	}
+	@Test
+	public void test144() {
+		
+	}
 
 }
